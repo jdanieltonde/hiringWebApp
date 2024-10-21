@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo{
+    margin-left: 3em;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul>li{
+    display: flex;
+    align-items: center;
+   margin-left: 2em;
+   color: #ffffff;
+}
+
+.menu ul>li:hover, svg:hover path{
+    color: red;
+    fill: red;
+}
+
+
+
+svg{
+    fill:#ffffff
+}
+
+
+
+.connexion{
+    color: #ffffff;
+    background: transparent;
+    border: .1em solid #ffffff;
+    border-radius: 5px;
+    padding: .5em 1.5em;
+    margin-right: 2em;
+}

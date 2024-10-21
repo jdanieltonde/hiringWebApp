@@ -1,0 +1,86 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* background: blue; */
+    height: 4.7em;
+
+    
+}
+
+header .hamburger path {
+    color: green;
+    stroke: green;
+}
+header>div svg{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+nav ul{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+nav svg{
+    width: 2em;
+    height: 2em;
+}
+
+nav ul>li{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    padding: 1em;
+    /* margin-left: -2.5em; */
+}
+nav ul>li span{
+    align-self: center;
+}
+nav ul>li:hover{
+ background-color: rgb(202, 202, 203);
+
+}
+
+
+
+header .logo>svg{
+    width: 7em;
+    height: 4em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+nav .navClose>li span{
+ display: none;
+}
+
+nav .navClose{
+margin-left: 0;
+}
+
+
+.hamburgerFlip>svg{
+    transform: scaleX(-1) ;
+    margin-left: 1em;
+    padding: 1.2em 0;
+ }
+
+
+
+ .active{
+    border-right-color: green;
+    border-right-width: .15em;
+    border-right-style: solid;
+  
+ 
+ }
+
+ .active svg path{
+    
+    transform: scale(1.1);
+ }

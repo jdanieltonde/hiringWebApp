@@ -1,0 +1,112 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background: green;
+    border: none;
+   
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: .5em;
+    padding-bottom:1em ;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoList{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.liens{
+color: #d4d404;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.liens a , a:visited{
+    text-decoration: none;
+    color: #d4d404;
+    margin-left: .5em;
+    
+}
+
+.liens svg{
+    width: 1em;
+    fill: #d4d404;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -10em;
+}
+.logo>p{
+    color: #d4d404;
+    margin: 1em;
+
+}
+
+
+
+.copyright{
+   text-align: center;
+   color: rgb(136, 135, 135);
+}
+
+.medias p,.infos p{
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative; 
+}
+
+.infos p{
+    margin-bottom: 1em; 
+    
+}
+
+.infos p::after , .medias p::after{
+    content:'';
+    display: block;
+    position: absolute;
+    height: .2em;
+    width: 5.5em;
+    bottom: -.3em;
+    background:#d4d404;
+}
+
+
+.medias p::after{
+    width: 5em;
+}
+
+.medias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.medias svg{
+    width: 2em;
+    margin-top: .5em;
+}
+
+.medias a{
+    color:#ffffff
+}
+
