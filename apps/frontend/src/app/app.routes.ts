@@ -58,5 +58,6 @@ export const routes: Routes = [
         ]},
         {path:'mon-compte',component:MoncompteComponent},
     ]},
+    
     {path:'candidat',component:CandidatComponent},
 ];
