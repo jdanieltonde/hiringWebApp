@@ -1,0 +1,101 @@
+*{
+    font-family: 'lato';
+}
+.chart{
+    display: flex;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 1em;
+}
+
+.line1>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 17em;
+    margin: auto;
+    
+}
+
+.chiffres span{
+margin-top: -.7em;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.chiffres>p{
+    color: grey;
+}
+
+.percent{
+    display: flex; align-items:end; justify-content: end;
+}
+
+
+.utilisateurs, .candidatures, .signalements, .enregistrements, .chart,.l2chart,.table{
+   border-radius: 5px;
+    box-shadow: 1px 1px 4px .1px grey;
+}
+
+
+.line2{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2em;
+}
+.l2list{
+    box-sizing: border-box;
+    overflow: scroll;
+    width: 25%;
+    max-width: 25%;
+}
+.l2list .wrapper>div{
+display: flex;  
+justify-content: space-between; 
+align-items: center;
+
+}
+
+
+.line3{
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4em;
+}
+
+
+.table{
+    box-sizing: content-box;
+    overflow: scroll;
+    height: 12.5em;
+    width: 75%;
+    border: 1px solid rgb(228, 227, 227);
+}
+
+.etape{
+    background-color: rgb(182, 255, 204);
+    color:black;
+    height: 2em;
+    width: 8em;
+    border-radius:3em ;
+    text-align: center;
+    padding-top: 4px;
+
+}

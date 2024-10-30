@@ -1,0 +1,41 @@
+
+.createbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-left: 2em;
+    margin-top: .5em;
+
+  }
+  .createbtn span{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+  }
+ 
+  .createbtn svg{
+   margin-right: 1em;
+  }
+
+  .createbtn svg path{
+    stroke: rgb(255, 255, 255);
+  }
+
+.ajouter{
+    display: flex;
+    align-items: center;
+    width: 7em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: .5em;
+    margin-bottom: 0em;
+    background-color: blue;
+    
+}
+
+
+.table{
+  box-sizing: border-box;
+  overflow: scroll;
+  height: 73.7vh;
+}

@@ -1,0 +1,92 @@
+table {
+    width: 100%;
+    
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .createbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2em;
+    margin-top: .5em;
+
+  }
+
+
+  .ajouter{
+    display: flex;
+    align-items: center;
+    width: 7em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: .5em;
+    margin-bottom: 0em;
+    background-color: blue;
+    
+}
+
+  .ajouter span{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+  }
+ 
+  .ajouter svg{
+   margin-right: 1em;
+  }
+
+  .ajouter svg path{
+    stroke: rgb(255, 255, 255);
+  }
+
+
+
+.table{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+
+.prenom{
+    color: red;
+    padding: 2em;
+}
+
+
+.select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.select>div{
+  margin-left: 1em;
+  display:flex;
+  align-items: center;
+}
+
+
+
+.select svg path{
+  stroke: white;
+}
+
+.grh .candidats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.candidats svg ,.grh svg{
+background-color: blue;
+padding: .2em;
+border-radius: 50%;
+}
