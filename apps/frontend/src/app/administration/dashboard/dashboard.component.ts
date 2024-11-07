@@ -7,6 +7,7 @@ import { MaterialsModule } from '../../materials.module';
 import { ChartCommonModule, LineChartModule, NgxChartsModule, PieChartModule } from '@swimlane/ngx-charts';
 import { PiechartComponent } from "./piechart/piechart.component";
 import { LinechartComponent } from "./linechart/linechart.component";
+import { MatButtonModule } from '@angular/material/button';
 
 
 export interface PeriodicElement {
@@ -30,7 +31,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [RouterModule, MaterialsModule, PieChartModule, LineChartModule, PiechartComponent, LinechartComponent,NgxChartsModule],
+  imports: [RouterModule,MatButtonModule, MaterialsModule, PieChartModule, LineChartModule, PiechartComponent, LinechartComponent,NgxChartsModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
