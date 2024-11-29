@@ -12,6 +12,11 @@
     margin-left: 3em;
 }
 
+.menu{
+    display: flex;
+
+}
+
 .menu ul{
     list-style: none;
     display: flex;
@@ -31,7 +36,13 @@
     fill: red;
 }
 
+.search{
+    margin-left: 2em;
+}
 
+.menuDrop{
+    display: flex;
+}
 
 svg{
     fill:#ffffff
@@ -47,3 +58,240 @@ svg{
     padding: .5em 1.5em;
     margin-right: 2em;
 }
+
+.navMobile{
+    display: none;
+}
+.menuDrop .menuToggle{
+    display: none;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuDrop .menuToggle::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #ffffff;
+    transition: 0.3s;
+
+}
+
+.menuDrop .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+
+.close .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #ffffff;
+  }
+
+.close .menuToggle::after{
+    transform: rotate(-45deg);
+}
+
+.close .menuMobile{
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    align-items: center;
+    justify-content: start;
+}
+
+.close .menuMobile>ul{
+    position: absolute;
+    top: 5em;
+}
+
+.menuMobile{
+ position: absolute;
+ display: none;
+ background-color: #ffffff;
+ align-items: start;
+ justify-content: center;
+ flex-direction: column;
+}
+
+
+.menuMobile>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style: none;
+
+}
+
+.menuMobile>ul li{
+    justify-items:center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+
+
+@media (max-width:900px){
+ .logo{
+    margin-left: 2em;
+ }
+ .navMobile{
+    display: flex;
+    margin-right: 1em;
+ }
+ .menu{
+    display: none;
+ }
+
+ .connexion{
+    display: none;
+ }
+
+ .close .menuMobile{
+    width: 110vw;
+    height: 110vh;
+ }
+
+ .menuDrop .menuToggle{
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuDrop .menuToggle::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #ffffff;
+    transition: 0.3s;
+
+}
+
+.menuDrop .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+
+.close .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #ffffff;
+  }
+
+.close .menuToggle::after{
+    transform: rotate(-45deg);
+}
+/**/
+.navMobile .fermerMenu{
+    position: absolute;
+    right:1em;
+    top: 0;
+}
+.fermerMenu{
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fermerMenu::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: green;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #ffffff;
+    transition: 0.3s;
+
+}
+
+.fermerMenu::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: green;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+
+.navMobile .close .fermerMenu::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #ffffff;
+  }
+
+.navMobile .close .fermerMenu::after{
+    transform: rotate(-45deg);
+}
+
+}
+
+@media (max-width:280px){
+    .close .menuMobile{
+        width: 120svw;
+        height: 120svh;
+        
+     }
+
+     .close .menuMobile ul{
+        margin-right: -3em;
+     }
+}
+
+@media (max-width:255px){
+    .close .menuMobile{
+        width: 140svw;
+        height: 140svh;
+      
+     }
+
+     .close .menuMobile ul{
+        margin-right: -7em;
+     }
+}
+
+@media (max-width:190px){
+    .close .menuMobile{
+        width: 190svw;
+        height: 190svh;
+        
+     }
+
+     .close .menuMobile ul{
+        margin-right: -8em;
+     }
+}
+
