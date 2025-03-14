@@ -1,9 +1,33 @@
 
 <body>
 <app-header class="header"/>
-<div class="hero">
-    <img src="../../" alt="">
+
+<div class="slider">
+    <div class="sliders">
+        <div [ngClass]="isActive ? 'coche-active':'coche'" (click)="activeCoche()"></div>      
+    </div>
+    <div class="slide"  *ngFor="let slide of allSlides ;let i = index" [ngStyle]="setCurrentStyles()" >
+       
+        <div class="text"> {{slide.title}}</div>
+    </div>
 </div>
-<hr>
-<app-footer/>
+<!-- 
+<div class="slider">
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2022/03/27/12/46/chongqing-7094955_1280.jpg" alt="Slide Image">
+      <div class="text-overlay">Mon texte 1</div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2022/11/13/21/32/holly-7590229_1280.jpg" alt="Slide Image">
+      <div class="text-overlay">Mon texte 2</div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2022/12/16/14/49/traditional-7659865_1280.jpg" alt="Slide Image">
+      <div class="text-overlay">Mon texte 3</div>
+    </div>
+  </div> -->
 </body>
+
+je dois te finir en ce 30 Decembre 2024
+
+<app-footer/>
